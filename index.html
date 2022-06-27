@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+    <div class="center-container">
+      <div class="MyBalance">
+        <div class="left">
+          <h4>My balance</h4>
+          <h1>$921.48</h1>
+        </div>
+        <div class="right">
+          <img src="./images/logo.svg" alt="logo" width="50px">
+        </div>
+      </div>
+      <div class="status-container">
+        <div class="top">
+          <h1>Spending - Last 7 days</h1>
+          <div class="bars">
+            <div>
+              <span class="value">50.20</span>
+              <div class="bar" data-day="mon"></div>
+              <li>mon</li>
+            </div>
+            <div>
+              <span class="value">50.20</span>
+              <div class="bar" data-day="tue"></div>
+              <li>tue</li>
+            </div>
+            <div>
+              <span class="value">50.20</span>
+              <div class="bar" data-day="wed"></div>
+              <li>wed</li>
+            </div>
+            <div>
+              <span class="value">50.20</span>
+              <div class="bar" data-day="thu"></div>
+              <li>thu</li>
+            </div>
+            <div>
+              <span class="value">50.20</span>
+              <div class="bar" data-day="fri"></div>
+              <li>fri</li>
+            </div>
+            <div>
+              <span class="value">50.20</span>
+              <div class="bar" data-day="sat"></div>
+              <li>sat</li>
+            </div>
+            <div>
+              <span class="value">50.20</span>
+              <div class="bar" data-day="sun"></div>
+              <li>sun</li>
+            </div>
+          </div>
+
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <h4>Total this month</h4>
+            <h1>$478.33</h1>
+          </div>
+          <div class="right">
+            <h4>+2.4%</h4>
+            <h4>from last month</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/yacin-wq">Yacin Bensidahmed</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

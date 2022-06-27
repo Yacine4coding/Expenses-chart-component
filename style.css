@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Epilogue:wght@700&display=swap');
+
+:root{
+    --Soft-red : hsl(10, 79%, 65%);
+    --cyan : hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body{
+    max-width: 1440px;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0 auto;
+    background-color: var(--Cream);
+}
+
+h1, h4{
+    margin: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.center-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+
+.value{
+    display: block;
+    visibility: hidden;
+    font-size: 10px;
+    background-color: black;
+    color: var(--Very-pale-orange);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+
+.MyBalance{
+    background-color: var(--Soft-red);
+    border-radius: 15px;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+}
+
+
+.status-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 15px;
+    height: 20em;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+}
+
+.bars{
+    height: 10em;
+    border-bottom: 0.5px solid var(--Medium-brown);
+    padding-bottom: 1em;
+}
+
+.bars > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    cursor: pointer;
+}
+
+.bars > div:hover > .value{
+    visibility: visible;
+}
+
+.bars > div:hover > .bar{
+    opacity: 60%;
+}
+
+
+.bars> div:hover > .HeightBar{
+    opacity: 100%;
+    background-color: var(--cyan);
+}
+
+.bars > div > li, .bottom > .right > h4:last-child, .bottom  > .left > h4{
+    color: var(--Medium-brown);
+    font-weight: 400;
+    font-size: 12px;
+    list-style-type: none;
+    padding-top: 0.5em;
+}
+
+.bar, .HeightBar{
+    width: 2em;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--Soft-red);
+    transition: all 0.2s ease;
+}
+
+
+
+
+.bars, .bottom, .MyBalance{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.MyBalance > .right{
+    display: flex;
+}
+
+.MyBalance > .left {
+    display: flex;
+    flex-direction: column;
+    color: var(--Very-pale-orange);
+}
+
+.MyBalance > .left > h1{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.MyBalance > .left > h4{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.status-container > .top > h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.bottom{
+    height: 5em;
+}
+
+.bottom > .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bottom > .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bottom > .right > h4:first-child{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+
+
+@media only screen and (max-width: 1113px){
+    .center-container{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 946px){
+    .center-container{
+        width: 35%;
+    }
+}
+
+
+@media only screen and (max-width: 806px){
+    .center-container{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .center-container{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .center-container{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .center-container{
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .center-container{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 437px){
+    .center-container{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .center-container{
+        width: 85%;
+    }
+}
