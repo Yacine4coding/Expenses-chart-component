@@ -13,7 +13,7 @@ fetch('./data.json')
                 let amount = element.amount
                 let total = (amount * TotHeight) / Totamount;;
                 bar.style.height = `${total}px`;
-                bar.previousElementSibling.textContent = `$${amount}`
+                bar.title = `$${amount}`
                 if(amount >= 50){
                     bar.className = 'HeightBar';
                 }
